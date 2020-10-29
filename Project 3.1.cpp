@@ -17,13 +17,13 @@ int main(){
 
 	cout << "x = "; cin >> x;
 
-	A = 5 * pow(M_E, 3 * x);
+	A = 5 * exp( 3 * x);
 
 	// спосіб 1: розгалуження в скороченій формі
 	if (x <= -1)
 		B = 3 + sin(abs(x));
 	if (-1 < x && x <= 3)
-		B = 2 * pow(M_E, x / 4 - 1);
+		B = 2 * exp( x / 4 - 1);
 	if (x > 3)
 		B = 7 - sqrt(2) * pow(x, 3);
 	
@@ -37,7 +37,7 @@ int main(){
 		B = 3 + sin(abs(x));
 	else
 		if (-1 < x && x <= 3)
-			B = 2 * pow(M_E, x / 4 - 1);
+			B = 2 * exp(x / 4 - 1);
 		else 
 			B = 7 - sqrt(2) * pow(x, 3);
 
